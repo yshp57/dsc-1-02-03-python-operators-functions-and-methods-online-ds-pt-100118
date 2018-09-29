@@ -2,14 +2,36 @@
 # Built-in Python Operators, Functions and Methods
 
 ## Introduction
-Introduction goes here
+
+As a data scientist you will spend a lot of time writing code in Python. In this lesson, we're going to instroduce some features built right into the langage that will allow you to perform common tasks more quickly and easily.
 
 ## Objectives
+You will be able to:
 * Use base Python methods like `.append()`, `.upper()` and `.capitalize()`
 * Understand (simply) and explain what built in Python methods are
 * Understand, explain and use some base Python functions like `len()`, `type()`, `sum()`, `max()` and `min()`
 * Understand and explain what functions are and why they’re useful
 * Understand, explain and use Python comparison, logical, and identity operators
+
+## Introducing "Objects"
+
+Later in the course we're going to spend a good amount of time on introducing and giving you hands on practice in "Object Oriented Programming" (OOP). But for now, to understand how some of the features in Python work, we're going to have to provide you with a brief introduction to some basic concepts. 
+
+A function is a piece of reusable code. If you often want to capitalize a word, you might write (or use, if someone else has written) a "function" called `capitalize()` that will take a string and make it all upper case.
+
+An object is a collection of data and functions. It turns out that for many types of programming, putting your functions and data together into "objects" is a really useful way to organize all of your code to make it easy to keep track of.
+
+If a function is part of an object we call it a method.
+
+Python has a number of built in functions and various objects in Python have built in methods.
+
+Really understanding objects, functions and methods will probably take a while, and it's something we'll come back to a number of times, but for now, here are the three things you need to know:
+* Python comes with a range of built in pieces of code to perform common tasks
+* Some of them you use by writing their name first - e.g. `type("hello")` - those are called functions
+* Others require you to take an object and "call a method on the object" e.g. `my_name.capitalize()` - they are methods
+
+Don't worry if it's a bit confusion for now, we'll come back to this repeatedly until it's second nature!
+
 
 ## Python Methods
 
@@ -22,7 +44,7 @@ We have seen some methods and functions already. For example, we have seen and u
 
 type("hello, i am a string.") # str
 ```
-To illustrate even more definitively, try running the next cell. We will find that Python doesn't know what `title()` is when it is not attached to a string. This is because it is a **method** that is **bound** to the string
+To illustrate even more clearly, try running the next cell. We will find that Python doesn't know what `title()` is when it is not attached to a string. This is because it is a **method** that is **bound** to the string
 
 
 ```python
@@ -143,8 +165,6 @@ min(["this", "is", "a", "list"])
 ```python
 max([10, 11, 13, 14, 9, 14.5])
 ```
-
-Functions are essentially objects that execute code. They are useful to us because they generally perform operations that are very frequent and also complex. There are very smart programmers who create these built in functions and they also optimize these functions so that they are as fast and efficient as possible. If we need to find the sum of all the numbers in a list, we can easily accomplish this by writing our own code, but using the `sum()` function is not only the easiest, but aslo the most efficient way of doing this.
 
 ## Python Operators
 
@@ -321,6 +341,6 @@ print(new_variable)
 ```
 
 # Summary
-In this lesson, we looked at lot. First we looked at Python built-in methods and functions. These are objects that perfrom common, and usually complex operations on data. They help us greatly reduce the amount of code we write while also greatly increasing the readibility, and efficiency of our code.
+In this lesson, we looked at lot. First we looked at Objects and then Python built-in methods and functions. These are objects that perform common operations on data. They help us greatly reduce the amount of code we write while also greatly increasing the readibility, and efficiency of our code.
 
 Next we looked at operators in Python. Operators are fundamental tools in many languages that provide a succicnt way to compare multiple elements. Comparison operators return boolean values and compare the value between two elements. Logical operators compare the truthiness and falsiness of two elements and either return one of the elements or a boolean value. Logical operators compare two elements for their equality, that is whether they are the same object or not, and they return a boolean value. Lastly, ternary operators are used to assign a value to a variable. They use an if statement and another operator to compare two values and return one of two values, which is used to assign the value of a variable.
